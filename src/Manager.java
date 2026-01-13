@@ -2,7 +2,7 @@ public class Manager extends Empleado {
     protected int personasACargo;
 
     public Manager(String dni,String nombre, int edad, double salarioBase, int antiguedadAnios,int personasACargo){
-        super(dni, nombre, edad, salarioBase);
+        super(dni, nombre, edad, salarioBase,antiguedadAnios);
         this.personasACargo = personasACargo;
 
     }
@@ -15,7 +15,7 @@ public class Manager extends Empleado {
         this.personasACargo = personasACargo;
     }
 
-    public double calcularSalario() {
+    public Double calcularSalario() {
         return super.calcularSalario();
     }
 }

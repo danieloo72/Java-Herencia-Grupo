@@ -16,7 +16,7 @@ public class Desarrollador extends Empleado{
      * @param lenguajePrincipal
      */
     public Desarrollador(String dni, String nombre, int edad, double salarioBase, int antiguedadAnios ,String lenguajePrincipal){
-        super(dni, nombre,edad,salarioBase,antiguedadAnios)
+        super(dni, nombre,edad,salarioBase,antiguedadAnios);
         this.lenguajePrincipal = lenguajePrincipal;
 
     }
