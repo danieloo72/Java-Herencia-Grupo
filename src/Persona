@@ -1,0 +1,66 @@
+public class Persona{
+
+    /**
+     * Clase persona
+      * @author Alumno: Luis López-Nuño
+     * @version 1.0
+    */
+
+    private String dni;
+    protected String nombre;
+    protected int edad;
+
+    /**
+     * Constructor principal de la clase Persona
+     *
+     * @param dni establece el dni de la persona
+     * @param nombre establece el nombre de la persona
+     * @param edad establece la edad de la persona
+     */
+
+    public Persona (String dni, String nombre, int edad){
+        this.dni = dni;
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    /**
+     * getter del atributo dni
+     *
+     * @return el dni de la persona 
+     */
+    private String getDni(){
+        return dni;
+    }
+
+
+    /**
+     * getter del atributo nombre
+     *
+     * @return el nombre de la persona
+     */
+
+    private String getNombre(){
+        return nombre;
+    }
+
+    /**
+     * getter del atributo edad
+     *
+     * @return la edad de la persona
+     */
+
+    private int getEdad(){
+        return edad;
+    }
+
+
+    /**
+     * Metodo de presentacion de la persona 
+     *
+     * @return texto con los datos de la persona
+     */
+    public void presentarse(){
+        System.out.println("Hola, soy " + nombre + " con dni: " + dni + " y tengo " + edad + " años.");
+    }
+}
