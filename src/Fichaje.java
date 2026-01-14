@@ -37,6 +37,7 @@ public class Fichaje {
         return tipo;
     }
 
+
     LocalDateTime now = LocalDateTime.now();
 
     if("ENTRADA".equalsIgnoreCase(tipo)){

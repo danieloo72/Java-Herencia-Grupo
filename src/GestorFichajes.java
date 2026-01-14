@@ -10,6 +10,7 @@ public class GestorFichajes {
     public GestorFichajes(){
         fichajes=new HashMap<>();
 
+
     }
 
     public void registrarEntrada(String idEmpleado){
