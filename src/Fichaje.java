@@ -15,7 +15,15 @@ public class Fichaje {
         this.fechaHoraEntrada = fechaHoraEntrada;
         this.fechaHoraSalida = fechaHoraSalida;
         this.tipo = tipo;
+        if("ENTRADA".equalsIgnoreCase(tipo)){
+            this.fechaHoraEntrada = now;
+
+        }else if("SALIDA".equalsIgnoreCase(tipo)){
+            this.fechaHoraSalida = now;
+        }
     }
+    LocalDateTime now = LocalDateTime.now();
+
 
     public String getIdFichaje() {
         return idFichaje;
@@ -38,13 +46,7 @@ public class Fichaje {
     }
 
 
-    LocalDateTime now = LocalDateTime.now();
 
-    if("ENTRADA".equalsIgnoreCase(tipo)){
-        this.fechaHoraEntrada = now;
 
-    }else if("SALIDA".equalsIgnoreCase(tipo)){
-        this.fechaHoraSalida = now;
-    }
 
 }
