@@ -29,6 +29,7 @@ public class GestorFichajes {
                 LocalDateTime.of(2026, 1, 15, 21, 23, 30),"Salida");
 
 
+
         fichajes.put(idEmpleado,new ArrayList<>());
         fichajes.get(idEmpleado).add(nuevoFichaje1);
         System.out.println("Fichaje registrado exitosamente" + fichajes);

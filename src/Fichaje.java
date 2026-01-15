@@ -3,6 +3,7 @@ import java.time.LocalDateTime;
 
 public class Fichaje {
 
+
     protected String idFichaje;
     protected String idEmpleado;
     protected LocalDateTime fechaHoraEntrada;
