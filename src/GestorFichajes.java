@@ -24,6 +24,16 @@ public class GestorFichajes {
         System.out.println("Fichaje registrado exitosamente" + fichajes);
 
     }
+    public void registrarSalida(String idEmpleado){
+        Fichaje nuevoFichaje1 = new Fichaje("1","1", LocalDateTime.of(2026, 1, 15, 10, 23, 30),
+                LocalDateTime.of(2026, 1, 15, 21, 23, 30),"Salida");
+
+
+        fichajes.put(idEmpleado,new ArrayList<>());
+        fichajes.get(idEmpleado).add(nuevoFichaje1);
+        System.out.println("Fichaje registrado exitosamente" + fichajes);
+
+    }
 
     public List<Fichaje> obtenerFichajesDelDia(String idEmpleado, LocalDateTime fecha){
         List<Fichaje> listaEmpleado = fichajes.get(idEmpleado);
