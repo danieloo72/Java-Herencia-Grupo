@@ -27,7 +27,7 @@ class Empleado extends Persona{
     public Double calcularSalario() {
         double salarioAnual = salarioBase * 12;
 
-        System.out.println("Salario: " + salarioAnual);
+        System.out.println("Salario base anual: " + salarioAnual);
 
         return salarioBase;
     }
