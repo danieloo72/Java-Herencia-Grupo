@@ -114,17 +114,20 @@ public class Departamento {
     /**
      * Calcula la nómina total del departamento sumando los salarios de todos los empleados activos.
      *
-     * @return La suma total de los salarios de los empleados activos
+     * @return El total de la nómina del departamento
      */
     public double calcularNominaDepartamento() {
-        double nominaTotal = 0.0;
-        for (Empleado empleado : empleados) {
-            if (empleado != null && empleado.isActivo()) {
-                nominaTotal += empleado.calcularSalario();
+        double total = 0;
+
+        for (Empleado e : empleados) {
+            if (e.isActivo()) {
+                total += e.calcularSalario();
             }
         }
-        return nominaTotal;
+
+        return total;
     }
+
 
     /**
      * Devuelve la lista de IDs de empleados del departamento.

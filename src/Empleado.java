@@ -104,7 +104,7 @@ class Empleado extends Persona {
 
     /**
      * Calcula el salario ANUAL incluyendo plus por antigüedad.
-     * Plus: 3% por cada año sobre el salario base (mensual).
+     * Plus: 3% por cada año sobre el salario base (mensual) .
      */
     public Double calcularSalario() {
         this.antiguedadAnios = calcularAntiguedad();
