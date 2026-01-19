@@ -1,6 +1,7 @@
 public class Persona{
 
 
+
     private String dni;
     protected String nombre;
     private int fechaNacimiento;
