@@ -6,6 +6,10 @@ public class Manager extends Empleado {
     protected double presupuestoGestionado;
     protected int reunionesSemanales;
 
+
+
+
+
     public Manager(String dni,String nombre, int edad, double salarioBase, int antiguedadAnios,int personasACargo, String idEmpleado, LocalDate fechaContrartacion, String departamento, double jornadaHoraria, boolean activo, String titulo, double presupuesto, int reunionesSemanales){
         super(dni, nombre, edad, salarioBase,antiguedadAnios, idEmpleado, fechaContrartacion, departamento, jornadaHoraria, activo);
         this.personasACargo = personasACargo;

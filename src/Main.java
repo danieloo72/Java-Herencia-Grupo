@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Main {
 
     protected static Scanner sc = new Scanner(System.in);
-
     public static void main(String[] args) {
+
 
         System.out.println("=== SISTEMA DE GESTIÓN Y FICHAJE ===");
         System.out.println("1.CONTRATACIÓN" +
