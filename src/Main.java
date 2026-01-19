@@ -5,6 +5,7 @@ public class Main {
         Desarrollador desarrollador = new Desarrollador("646","Jaime", 40,2000.0,20,"Java", "Senior", 1);
         Manager manager = new Manager("787","Julio", 23,5000.0,5, 8);
 
+
         empleado.presentarse();
         empleado.calcularSalario();
         desarrollador.presentarse();

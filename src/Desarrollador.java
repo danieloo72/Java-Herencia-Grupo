@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -65,7 +66,6 @@ public class Desarrollador extends Empleado{
     @Override
     public Double calcularSalario(){
 
-
         switch (nivel){
             case "Mid":
                 salarioBase = salarioBase * 1.15 + horasExtra * 20;
@@ -85,6 +85,5 @@ public class Desarrollador extends Empleado{
 
         return salarioBase;
     }
-
 
 }

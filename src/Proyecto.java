@@ -88,7 +88,7 @@ public class Proyecto {
         if (horasReales == 0){
             return 0.0;
         }else {
-            System.out.print("productividad entre las horas estimadas y las reales: ");
+            System.out.print("Productividad entre las horas estimadas y las reales: ");
             return (horasEstimadas / horasReales)*100;
         }
     }
