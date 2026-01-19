@@ -112,7 +112,7 @@ public class Departamento {
     }
 
     /**
-     * Calcula la nómina total del departamento sumando los salarios de todos los empleados activos.
+     * Calcula la nómina total del departamento sumando los salarios de todos los empleados activos .
      *
      * @return El total de la nómina del departamento
      */
