@@ -2,7 +2,7 @@
 import java.time.LocalDate;
 
 /**
- * Empleado de la empresa (hereda de Persona).
+ * Empleado de la empresa (hereda de Persona ).
  */
 public class Empleado extends Persona {
 
