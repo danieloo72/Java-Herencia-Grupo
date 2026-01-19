@@ -65,7 +65,6 @@ public class Desarrollador extends Empleado{
     @Override
     public Double calcularSalario(){
 
-
         switch (nivel){
             case "Mid":
                 salarioBase = salarioBase * 1.15 + horasExtra * 20;
