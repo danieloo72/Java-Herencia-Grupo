@@ -7,6 +7,7 @@ import java.util.*;
 public class GestorFichajes {
 
 
+
     private Map<String, List<Fichaje>> fichajes;
     public GestorFichajes(){
         fichajes=new HashMap<>();
