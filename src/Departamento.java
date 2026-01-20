@@ -8,7 +8,7 @@ import java.util.List;
 public class Departamento {
 
     private String nombre;
-    private String jefeDepartamento; // id del manager .
+    private String jefeDepartamento; // id del manager  .
     private double presupuestoAnual;
     private List<Empleado> empleados;
 
