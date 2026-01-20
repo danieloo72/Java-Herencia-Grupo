@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 class Empleado extends Persona{
 
     /**
@@ -5,6 +7,7 @@ class Empleado extends Persona{
      */
     protected double salarioBase;
     protected int antiguedadAnios;
+    public String fecha;
 
     /**
      * Constructor

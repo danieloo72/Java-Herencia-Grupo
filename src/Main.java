@@ -1,9 +1,17 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Scanner;
 
 public class Main {
 
     protected static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+
+        Empleado empleado = new Empleado("945", "Jaime", 18, 100.0, 0);
+        Desarrollador desarrollador = new Desarrollador("234", "Juan", 30, 2000,10, "Java", "Junior", 2.5);
+        Proyecto proyecto = new Proyecto("23487", "Bienvenida", 5, 9.0 , 15.75, "Terminado");
+        LocalDate fecha = LocalDate.parse("2020-01-01");
+        Manager manager = new Manager("437", "Antonio", 22, 5000.99, 2, 10, "56", fecha, "Programación", 7.5, true, "Director", 10000.50, 3);
 
         System.out.println("=== SISTEMA DE GESTIÓN Y FICHAJE ===");
         System.out.println("1.CONTRATACIÓN" +
@@ -41,7 +49,7 @@ public class Main {
 
             switch (opcion) {
                  case 1.1:
-                    registrarFichaje();
+                    fichaje.registrarFichaje();
                     break;
                 case 1.2:
                     ();
@@ -50,7 +58,7 @@ public class Main {
 
                     break;
                 case 2.1:
-                    registrarEntrada();
+                    empleado.registrarEntrada();
                     break;
                 case 2.2:
                     registrarSalida();
@@ -62,7 +70,7 @@ public class Main {
                     calcularHorasMensuales();
                     break;
                 case 3.1:
-                    calcularSalario();
+                    desarrollador.calcularSalario();
                     break;
                 case 3.2:
                     calcularNominaDepartamento();
@@ -70,22 +78,22 @@ public class Main {
                 case 3.3:
                     break;
                 case 4.1:
-                    asignarDesarrollador();
+                    proyecto.asignarDesarrolladores("674");
                     break;
                 case 4.2:
-                    registrarHoras();
+                    proyecto.registrarHoras("675", 8.5);
                     break;
                 case 4.3:
-                    calcularProductividad();
+                    proyecto.calcularProductividad();
                     break;
                 case 5.1:
-                    getPersonasACargo();
+                    manager.getPersonasACargo();
                     break;
                 case 5.2:
                     registrarAsistencia();
                     break;
                 case 5.3:
-                    aprobarHorasExtra();
+                    manager.aprobarHorasExtra("102", 2);
                     break;
                 case 5.4:
                     break;
