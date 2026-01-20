@@ -7,7 +7,9 @@ public class Main {
     protected static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
 
+        GestorFichajes fichaje =  new GestorFichajes();
         Empleado empleado = new Empleado("945", "Jaime", 18, 100.0, 0);
+        Departamento departamento = new Departamento("Contabilidad", "Juan", 50000.25);
         Desarrollador desarrollador = new Desarrollador("234", "Juan", 30, 2000,10, "Java", "Junior", 2.5);
         Proyecto proyecto = new Proyecto("23487", "Bienvenida", 5, 9.0 , 15.75, "Terminado");
         LocalDate fecha = LocalDate.parse("2020-01-01");
@@ -49,31 +51,31 @@ public class Main {
 
             switch (opcion) {
                  case 1.1:
-                    fichaje.registrarFichaje();
+                     departamento.agregarEmpleado(empleado);
                     break;
                 case 1.2:
-                    ();
+                    fichaje.registrarFichaje();
                     break;
                 case 1.3:
-
+                    departamento.listarEmpleados();
                     break;
                 case 2.1:
-                    empleado.registrarEntrada();
+                    fichaje.registrarEntrada("455");
                     break;
                 case 2.2:
-                    registrarSalida();
+                    fichaje.registrarSalida("455");
                     break;
                 case 2.3:
-                    obtenerFichajesDelDia();
+                    fichaje.obtenerFichajesDelDia("976", );
                     break;
                 case 2.4:
-                    calcularHorasMensuales();
+                    fichaje.calcularHorasMensuales("455", 1, 2026);
                     break;
                 case 3.1:
                     desarrollador.calcularSalario();
                     break;
                 case 3.2:
-                    calcularNominaDepartamento();
+                    departamento.calcularNominaDepartamento();
                     break;
                 case 3.3:
                     break;
@@ -90,7 +92,7 @@ public class Main {
                     manager.getPersonasACargo();
                     break;
                 case 5.2:
-                    registrarAsistencia();
+                    fichaje.registarAsistencia("455");
                     break;
                 case 5.3:
                     manager.aprobarHorasExtra("102", 2);
